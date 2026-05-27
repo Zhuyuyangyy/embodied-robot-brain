@@ -1,0 +1,10 @@
+sequence,delta,PASS,BLOCK,ESCALATE,safe_blocks,final_conflict_rate
+Sparse_Conflict,0.2,7,1,0,0,0.25
+Sparse_Conflict,0.3,8,0,0,0,0.25
+Sparse_Conflict,0.4,8,0,0,0,0.25
+Dense_Conflict,0.2,0,5,7,2,0.4167
+Dense_Conflict,0.3,0,5,7,2,0.4167
+Dense_Conflict,0.4,0,5,7,2,0.4167
+Recovery_Sequence,0.2,3,9,0,3,0.25
+Recovery_Sequence,0.3,7,5,0,1,0.25
+Recovery_Sequence,0.4,10,2,0,0,0.25

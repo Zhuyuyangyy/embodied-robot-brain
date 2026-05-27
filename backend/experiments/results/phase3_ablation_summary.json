@@ -1,0 +1,320 @@
+{
+  "table_a_classification": {
+    "rule_only": {
+      "precision": 1.0,
+      "recall": 0.3,
+      "f1": 0.4615,
+      "tp": 9,
+      "fp": 0,
+      "tn": 10,
+      "fn": 21,
+      "type_recalls": {
+        "TYPE_I": 0.7,
+        "TYPE_II": 0.2,
+        "TYPE_III": 0.0
+      }
+    },
+    "paper_only": {
+      "precision": 0.6,
+      "recall": 0.4,
+      "f1": 0.48,
+      "tp": 12,
+      "fp": 8,
+      "tn": 2,
+      "fn": 18,
+      "type_recalls": {
+        "TYPE_I": 0.6,
+        "TYPE_II": 0.5,
+        "TYPE_III": 0.1
+      }
+    },
+    "hybrid": {
+      "precision": 0.619,
+      "recall": 0.4333,
+      "f1": 0.5098,
+      "tp": 13,
+      "fp": 8,
+      "tn": 2,
+      "fn": 17,
+      "type_recalls": {
+        "TYPE_I": 0.7,
+        "TYPE_II": 0.5,
+        "TYPE_III": 0.1
+      }
+    }
+  },
+  "table_b_governance": {
+    "hybrid_without_memory": {
+      "PASS": 40,
+      "BLOCK": 0,
+      "ESCALATE": 0,
+      "pass_rate": 1.0,
+      "block_rate": 0.0
+    },
+    "hybrid_with_memory": {
+      "PASS": 40,
+      "BLOCK": 0,
+      "ESCALATE": 0,
+      "pass_rate": 1.0,
+      "block_rate": 0.0,
+      "safe_after_conflict_blocks": 0,
+      "final_conflict_rate": 0.1
+    },
+    "classification_metrics": {
+      "precision": 0.619,
+      "recall": 0.4333,
+      "f1": 0.5098,
+      "tp": 13,
+      "fp": 8,
+      "tn": 2,
+      "fn": 17,
+      "type_recalls": {
+        "TYPE_I": 0.7,
+        "TYPE_II": 0.5,
+        "TYPE_III": 0.1
+      }
+    }
+  },
+  "samples": [
+    {
+      "herb_a": "甘草",
+      "herb_b": "甘遂",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "人参",
+      "herb_b": "藜芦",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "乌头",
+      "herb_b": "贝母",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "乌头",
+      "herb_b": "瓜蒌",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "甘草",
+      "herb_b": "海藻",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "人参",
+      "herb_b": "莱菔子",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "附子",
+      "herb_b": "犀角",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "三棱",
+      "herb_b": "朴硝",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "巴豆",
+      "herb_b": "牵牛",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "官桂",
+      "herb_b": "石脂",
+      "expected_type": "TYPE_I",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "附子",
+      "herb_b": "半夏",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "丹参",
+      "herb_b": "藜芦",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "黄连",
+      "herb_b": "附子",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "附子",
+      "herb_b": "石膏",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "麻黄",
+      "herb_b": "石膏",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "乌头",
+      "herb_b": "白蔹",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "乌头",
+      "herb_b": "白芨",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "三棱",
+      "herb_b": "芒硝",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "三棱",
+      "herb_b": "硇砂",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "朴硝",
+      "herb_b": "郁金",
+      "expected_type": "TYPE_II",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "黄芪",
+      "herb_b": "防风",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "枸杞子",
+      "herb_b": "绿茶",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "阿胶",
+      "herb_b": "萝卜",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "人参",
+      "herb_b": "茶叶",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "何首乌",
+      "herb_b": "大蒜",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "甘草",
+      "herb_b": "猪肉",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "红枣",
+      "herb_b": "葱",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "桂圆",
+      "herb_b": "咖啡",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "黄精",
+      "herb_b": "酸梅",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "百合",
+      "herb_b": "韭菜",
+      "expected_type": "TYPE_III",
+      "has_conflict": true
+    },
+    {
+      "herb_a": "人参",
+      "herb_b": "黄芪",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "麻黄",
+      "herb_b": "桂枝",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "当归",
+      "herb_b": "川芎",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "黄连",
+      "herb_b": "吴茱萸",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "附子",
+      "herb_b": "干姜",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "枸杞子",
+      "herb_b": "菊花",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "白术",
+      "herb_b": "茯苓",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "金银花",
+      "herb_b": "连翘",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "柴胡",
+      "herb_b": "黄芩",
+      "expected_type": null,
+      "has_conflict": false
+    },
+    {
+      "herb_a": "陈皮",
+      "herb_b": "半夏",
+      "expected_type": null,
+      "has_conflict": false
+    }
+  ]
+}

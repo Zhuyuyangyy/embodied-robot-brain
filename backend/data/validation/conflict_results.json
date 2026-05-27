@@ -1,0 +1,122 @@
+{
+  "total_papers": 17,
+  "total_conflicts": 6,
+  "type_i_count": 2,
+  "type_ii_count": 4,
+  "type_iii_count": 0,
+  "evaluation": {
+    "precision@5": 1.0,
+    "recall@5": 0.625,
+    "f1@5": 0.7692307692307693,
+    "precision@10": 1.0,
+    "recall@10": 0.75,
+    "f1@10": 0.8571428571428571,
+    "precision@20": 1.0,
+    "recall@20": 0.75,
+    "f1@20": 0.8571428571428571
+  },
+  "conflicts": [
+    {
+      "conflict_id": "CONF_0000",
+      "type": "Type-I",
+      "description": "方法'ResNet-50'在数据集'ImageNet'(76.50%) vs 'CIFAR-100'(72.20%) 效果差异4.30%，超过2.00%阈值",
+      "parties": [
+        "P001",
+        "P002"
+      ],
+      "dataset": "ImageNet vs CIFAR-100",
+      "metric": "accuracy",
+      "gap": 0.04300000000000004,
+      "evidence": [
+        "ResNet-50@ImageNet: 0.7650",
+        "ResNet-50@CIFAR-100: 0.7220"
+      ],
+      "severity": "medium"
+    },
+    {
+      "conflict_id": "CONF_0001",
+      "type": "Type-I",
+      "description": "方法'U-Net'在数据集'MedicalSegDec'(88.30%) vs 'Cityscapes'(83.20%) 效果差异5.10%，超过2.00%阈值",
+      "parties": [
+        "P003",
+        "P004"
+      ],
+      "dataset": "MedicalSegDec vs Cityscapes",
+      "metric": "dice",
+      "gap": 0.050999999999999934,
+      "evidence": [
+        "U-Net@MedicalSegDec: 0.8830",
+        "U-Net@Cityscapes: 0.8320"
+      ],
+      "severity": "high"
+    },
+    {
+      "conflict_id": "CONF_0002",
+      "type": "Type-II",
+      "description": "数据集'UCI-Multiple'上'Deep Neural Network'(89.50%) vs 'Decision Tree'(81.20%) 差异8.30%，超过5.00%阈值",
+      "parties": [
+        "P014",
+        "P015"
+      ],
+      "dataset": "UCI-Multiple",
+      "metric": "accuracy",
+      "gap": 0.08299999999999996,
+      "evidence": [
+        "Decision Tree: 0.8120",
+        "Deep Neural Network: 0.8950"
+      ],
+      "severity": "medium"
+    },
+    {
+      "conflict_id": "CONF_0003",
+      "type": "Type-II",
+      "description": "数据集'GLUE'上'GPT-4'(91.20%) vs 'BERT-Large'(84.60%) 差异6.60%，超过5.00%阈值",
+      "parties": [
+        "P005",
+        "P010"
+      ],
+      "dataset": "GLUE",
+      "metric": "accuracy",
+      "gap": 0.06600000000000006,
+      "evidence": [
+        "BERT-Large: 0.8460",
+        "GPT-4: 0.9120"
+      ],
+      "severity": "medium"
+    },
+    {
+      "conflict_id": "CONF_0004",
+      "type": "Type-II",
+      "description": "数据集'GLUE'上'BERT-Large'(84.60%) vs 'LLaMA-65B'(68.90%) 差异15.70%，超过5.00%阈值",
+      "parties": [
+        "P005",
+        "P011"
+      ],
+      "dataset": "GLUE",
+      "metric": "accuracy",
+      "gap": 0.15699999999999992,
+      "evidence": [
+        "BERT-Large: 0.8460",
+        "LLaMA-65B: 0.6890"
+      ],
+      "severity": "high"
+    },
+    {
+      "conflict_id": "CONF_0005",
+      "type": "Type-II",
+      "description": "数据集'GLUE'上'GPT-4'(91.20%) vs 'LLaMA-65B'(68.90%) 差异22.30%，超过5.00%阈值",
+      "parties": [
+        "P010",
+        "P011"
+      ],
+      "dataset": "GLUE",
+      "metric": "accuracy",
+      "gap": 0.22299999999999998,
+      "evidence": [
+        "GPT-4: 0.9120",
+        "LLaMA-65B: 0.6890"
+      ],
+      "severity": "high"
+    }
+  ]
+}

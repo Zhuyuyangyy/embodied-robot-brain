@@ -1,0 +1,4 @@
+config,precision,recall,f1,type_i_recall,type_ii_recall,type_iii_recall,tp,fp,tn,fn
+rule_only,1.0,0.3,0.4615,0.7,0.2,0.0,9,0,10,21
+paper_only,0.6,0.4,0.48,0.6,0.5,0.1,12,8,2,18
+hybrid,0.619,0.4333,0.5098,0.7,0.5,0.1,13,8,2,17

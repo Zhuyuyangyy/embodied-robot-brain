@@ -1,0 +1,41 @@
+# Deployment scripts and production config
+
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8013:8013"
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - NEO4J_URI=bolt://neo4j:7687
+      - MILVUS_HOST=milvus
+    depends_on:
+      - neo4j
+      - milvus
+    restart: unless-stopped
+
+  neo4j:
+    image: neo4j:5-community
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/password
+    volumes:
+      - neo4j_data:/data
+
+  milvus:
+    image: milvusdb/milvus:v2.3.3
+    ports:
+      - "19530:19530"
+    volumes:
+      - milvus_data:/var/lib/milvus
+
+volumes:
+  neo4j_data:
+  milvus_data:

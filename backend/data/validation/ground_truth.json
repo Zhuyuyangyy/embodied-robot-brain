@@ -1,0 +1,85 @@
+{
+  "conflicts": [
+    {
+      "conflict_id": "CONF_0000",
+      "type": "Type-I",
+      "parties": [
+        "P001",
+        "P002"
+      ],
+      "dataset": "cross",
+      "metric": "accuracy"
+    },
+    {
+      "conflict_id": "CONF_0001",
+      "type": "Type-I",
+      "parties": [
+        "P003",
+        "P004"
+      ],
+      "dataset": "cross",
+      "metric": "dice"
+    },
+    {
+      "conflict_id": "CONF_0002",
+      "type": "Type-I",
+      "parties": [
+        "P005",
+        "P006"
+      ],
+      "dataset": "cross",
+      "metric": "accuracy"
+    },
+    {
+      "conflict_id": "CONF_0003",
+      "type": "Type-II",
+      "parties": [
+        "P007",
+        "P008",
+        "P009"
+      ],
+      "dataset": "Cityscapes",
+      "metric": "mIoU"
+    },
+    {
+      "conflict_id": "CONF_0004",
+      "type": "Type-II",
+      "parties": [
+        "P010",
+        "P011"
+      ],
+      "dataset": "GLUE",
+      "metric": "accuracy"
+    },
+    {
+      "conflict_id": "CONF_0005",
+      "type": "Type-II",
+      "parties": [
+        "P012",
+        "P013"
+      ],
+      "dataset": "MedicalSegDec",
+      "metric": "dice"
+    },
+    {
+      "conflict_id": "CONF_0006",
+      "type": "Type-III",
+      "parties": [
+        "P014",
+        "P015"
+      ],
+      "dataset": null,
+      "metric": null
+    },
+    {
+      "conflict_id": "CONF_0007",
+      "type": "Type-III",
+      "parties": [
+        "P016",
+        "P017"
+      ],
+      "dataset": null,
+      "metric": null
+    }
+  ]
+}

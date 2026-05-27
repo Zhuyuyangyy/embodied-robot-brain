@@ -1,0 +1,358 @@
+{
+  "papers": [
+    {
+      "paper_id": "P001",
+      "title": "Deep Residual Learning",
+      "authors": [
+        "He et al."
+      ],
+      "year": 2016,
+      "venue": "CVPR",
+      "citations": 180000,
+      "method": "ResNet-50",
+      "dataset": "ImageNet",
+      "metrics": [
+        "Accuracy: 76.5%"
+      ],
+      "claims": [
+        "ResNet achieves SOTA on all benchmarks"
+      ],
+      "related_work": [
+        "P002"
+      ]
+    },
+    {
+      "paper_id": "P002",
+      "title": "Revisiting ResNets on CIFAR",
+      "authors": [
+        "He et al."
+      ],
+      "year": 2019,
+      "venue": "arXiv",
+      "citations": 3200,
+      "method": "ResNet-50",
+      "dataset": "CIFAR-100",
+      "metrics": [
+        "Accuracy: 72.2%"
+      ],
+      "claims": [
+        "ResNet transfers well across domains"
+      ],
+      "related_work": [
+        "P001"
+      ]
+    },
+    {
+      "paper_id": "P003",
+      "title": "U-Net for Biomedical Image Segmentation",
+      "authors": [
+        "Ronneberger et al."
+      ],
+      "year": 2015,
+      "venue": "MICCAI",
+      "citations": 95000,
+      "method": "U-Net",
+      "dataset": "MedicalSegDec",
+      "metrics": [
+        "Dice: 88.3%"
+      ],
+      "claims": [
+        "U-Net is optimal for medical imaging"
+      ],
+      "related_work": [
+        "P004"
+      ]
+    },
+    {
+      "paper_id": "P004",
+      "title": "U-Net for Street Scene Segmentation",
+      "authors": [
+        "Ronneberger et al."
+      ],
+      "year": 2018,
+      "venue": "ICCV",
+      "citations": 12000,
+      "method": "U-Net",
+      "dataset": "Cityscapes",
+      "metrics": [
+        "Dice: 83.2%"
+      ],
+      "claims": [
+        "U-Net generalizes to natural images"
+      ],
+      "related_work": [
+        "P003"
+      ]
+    },
+    {
+      "paper_id": "P005",
+      "title": "BERT Pre-training",
+      "authors": [
+        "Devlin et al."
+      ],
+      "year": 2019,
+      "venue": "NAACL",
+      "citations": 150000,
+      "method": "BERT-Large",
+      "dataset": "GLUE",
+      "metrics": [
+        "Accuracy: 84.6%"
+      ],
+      "claims": [
+        "BERT achieves human-level language understanding"
+      ],
+      "related_work": [
+        "P006"
+      ]
+    },
+    {
+      "paper_id": "P006",
+      "title": "BERT Generalization to Reading Comprehension",
+      "authors": [
+        "Devlin et al."
+      ],
+      "year": 2020,
+      "venue": "EMNLP",
+      "citations": 8000,
+      "method": "BERT-Large",
+      "dataset": "SQuAD",
+      "metrics": [
+        "F1: 80.9%"
+      ],
+      "claims": [
+        "BERT generalizes across NLP tasks"
+      ],
+      "related_work": [
+        "P005"
+      ]
+    },
+    {
+      "paper_id": "P007",
+      "title": "SegFormer",
+      "authors": [
+        "Xie et al."
+      ],
+      "year": 2021,
+      "venue": "NeurIPS",
+      "citations": 8000,
+      "method": "SegFormer-B5",
+      "dataset": "Cityscapes",
+      "metrics": [
+        "mIoU: 84.0%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P008",
+        "P009"
+      ]
+    },
+    {
+      "paper_id": "P008",
+      "title": "DeepLabV3+",
+      "authors": [
+        "Chen et al."
+      ],
+      "year": 2018,
+      "venue": "IEEE TPAMI",
+      "citations": 22000,
+      "method": "DeepLabV3+",
+      "dataset": "Cityscapes",
+      "metrics": [
+        "mIoU: 78.5%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P007",
+        "P009"
+      ]
+    },
+    {
+      "paper_id": "P009",
+      "title": "PSPNet",
+      "authors": [
+        "Zhao et al."
+      ],
+      "year": 2017,
+      "venue": "CVPR",
+      "citations": 14000,
+      "method": "PSPNet",
+      "dataset": "Cityscapes",
+      "metrics": [
+        "mIoU: 77.8%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P007",
+        "P008"
+      ]
+    },
+    {
+      "paper_id": "P010",
+      "title": "GPT-4 Technical Report",
+      "authors": [
+        "OpenAI"
+      ],
+      "year": 2023,
+      "venue": "arXiv",
+      "citations": 10000,
+      "method": "GPT-4",
+      "dataset": "GLUE",
+      "metrics": [
+        "Accuracy: 91.2%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P011"
+      ]
+    },
+    {
+      "paper_id": "P011",
+      "title": "LLaMA Open Foundation Models",
+      "authors": [
+        "Touvron et al."
+      ],
+      "year": 2023,
+      "venue": "arXiv",
+      "citations": 7000,
+      "method": "LLaMA-65B",
+      "dataset": "GLUE",
+      "metrics": [
+        "Accuracy: 68.9%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P010"
+      ]
+    },
+    {
+      "paper_id": "P012",
+      "title": "nnU-Net Revisited",
+      "authors": [
+        "Isensee et al."
+      ],
+      "year": 2021,
+      "venue": "arXiv",
+      "citations": 3000,
+      "method": "nnU-Net",
+      "dataset": "MedicalSegDec",
+      "metrics": [
+        "Dice: 91.2%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P013"
+      ]
+    },
+    {
+      "paper_id": "P013",
+      "title": "Swin-UNet",
+      "authors": [
+        "Cao et al."
+      ],
+      "year": 2021,
+      "venue": "MICCAI",
+      "citations": 2500,
+      "method": "Swin-UNet",
+      "dataset": "MedicalSegDec",
+      "metrics": [
+        "Dice: 86.7%"
+      ],
+      "claims": [],
+      "related_work": [
+        "P012"
+      ]
+    },
+    {
+      "paper_id": "P014",
+      "title": "Decision Trees are Interpretable",
+      "authors": [
+        "Quinlan"
+      ],
+      "year": 1986,
+      "venue": "ML Journal",
+      "citations": 25000,
+      "method": "Decision Tree",
+      "dataset": "UCI-Multiple",
+      "metrics": [
+        "Accuracy: 81.2%"
+      ],
+      "claims": [
+        "DT provides complete interpretability and global explanations",
+        "Decision Trees guarantee interpretability"
+      ],
+      "related_work": [
+        "P015"
+      ],
+      "theory_type": "interpretable"
+    },
+    {
+      "paper_id": "P015",
+      "title": "Why Deep Networks are Better",
+      "authors": [
+        "Bengio"
+      ],
+      "year": 2007,
+      "venue": "NIPS",
+      "citations": 18000,
+      "method": "Deep Neural Network",
+      "dataset": "UCI-Multiple",
+      "metrics": [
+        "Accuracy: 89.5%"
+      ],
+      "claims": [
+        "Deep learning provides end-to-end pipeline with better accuracy",
+        "Deep networks are black boxes but achieve better performance"
+      ],
+      "related_work": [
+        "P014"
+      ],
+      "theory_type": "black_box"
+    },
+    {
+      "paper_id": "P016",
+      "title": "Adam Converges to Global Optimum",
+      "authors": [
+        "Reddi et al."
+      ],
+      "year": 2018,
+      "venue": "ICML",
+      "citations": 6000,
+      "method": "Adam",
+      "dataset": "CIFAR-10",
+      "metrics": [
+        "Accuracy: 94.1%"
+      ],
+      "claims": [
+        "Adam is guaranteed to converge to global optimum",
+        "Adaptive methods are theoretically sound"
+      ],
+      "related_work": [
+        "P017"
+      ],
+      "theory_type": "global_optimum"
+    },
+    {
+      "paper_id": "P017",
+      "title": "Adam May Get Stuck in Local Minima",
+      "authors": [
+        "Wilson et al."
+      ],
+      "year": 2017,
+      "venue": "NeurIPS",
+      "citations": 9000,
+      "method": "Adam",
+      "dataset": "CIFAR-10",
+      "metrics": [
+        "Accuracy: 91.3%"
+      ],
+      "claims": [
+        "Adaptive methods can converge to worse local minima",
+        "SGD with momentum is more reliable"
+      ],
+      "related_work": [
+        "P016"
+      ],
+      "theory_type": "local_optimum"
+    }
+  ]
+}
