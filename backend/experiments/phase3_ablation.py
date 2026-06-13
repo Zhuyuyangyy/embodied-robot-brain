@@ -253,7 +253,7 @@ def run_hybrid_gate(samples: List[Dict], delta: float = 0.3, theta_high: float =
         gate_decision = gate.decide(agent_state, conflict_knowledge)
 
         is_safe = not sample["has_conflict"]
-        is_blocked = (gate_decision == GateDecision.BLOCK)
+        is_blocked = (gate_decision == GateDecision.SOFT_REJECT)
         if is_safe and is_blocked:
             safe_after_conflict_blocks += 1
 

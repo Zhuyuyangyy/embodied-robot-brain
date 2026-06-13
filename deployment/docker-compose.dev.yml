@@ -1,0 +1,86 @@
+# Embodied Robot Brain - Development Docker Compose
+# Lightweight configuration for local development
+
+version: '3.8'
+
+services:
+  # Neo4j Knowledge Graph Database
+  neo4j:
+    image: neo4j:5-community
+    container_name: embodied-robot-brain-neo4j-dev
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/password
+    volumes:
+      - neo4j_data_dev:/data
+    networks:
+      - dev-network
+    restart: unless-stopped
+
+  # Milvus Vector Database (Standalone)
+  milvus:
+    image: milvusdb/milvus:v2.3.3
+    container_name: embodied-robot-brain-milvus-dev
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    environment:
+      - ETCD_USE_EMBED=true
+      - COMMON_STORAGETYPE=local
+    volumes:
+      - milvus_data_dev:/var/lib/milvus
+    networks:
+      - dev-network
+    restart: unless-stopped
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: embodied-robot-brain-redis-dev
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data_dev:/data
+    networks:
+      - dev-network
+    restart: unless-stopped
+
+  # Development tools (optional)
+  # Uncomment if you need these tools
+
+  # Adminer for database management
+  # adminer:
+  #   image: adminer
+  #   container_name: embodied-robot-brain-adminer
+  #   ports:
+  #     - "8080:8080"
+  #   networks:
+  #     - dev-network
+
+  # Redis Commander
+  # redis-commander:
+  #   image: rediscommander/redis-commander:latest
+  #   container_name: embodied-robot-brain-redis-commander
+  #   ports:
+  #     - "8081:8081"
+  #   environment:
+  #     - REDIS_HOSTS=local:redis:6379
+  #   networks:
+  #     - dev-network
+
+# Networks
+networks:
+  dev-network:
+    driver: bridge
+
+# Volumes
+volumes:
+  neo4j_data_dev:
+    driver: local
+  milvus_data_dev:
+    driver: local
+  redis_data_dev:
+    driver: local

@@ -365,7 +365,7 @@ Stage 3: Design Revision
 
 PhysicsGate addresses a fundamental limitation in LLM-based embodied AI systems: the reliance on probabilistic self-evaluation for safety-critical decisions. By introducing an independent, O(1) hash lookup-based physical constraint layer (TCMConstraintLibrary), PhysicsGate provides deterministic, model-independent safety guarantees. The dynamic δ threshold decay mechanism balances strict safety (δ=0.05) with practical usability (δ=0.10 after retries), preventing deadlocks while maintaining high precision.
 
-The triple-layer conflict taxonomy (Type-I/II/III) combined with the four-dimensional credibility scoring creates a comprehensive framework for validating LLM-generated scientific content. Our experiments demonstrate **100% precision** and **75% recall** on a manually annotated TCM literature dataset, significantly outperforming GPT-4-based approaches.
+The triple-layer conflict taxonomy (Type-I/II/III) combined with the four-dimensional credibility scoring creates a comprehensive framework for validating LLM-generated scientific content. Our experiments demonstrate perfect precision on the evaluated subset (n=48 annotated TCM literature passages, 95% CI: 92.6%–100%) and 75% recall, numerically outperforming GPT-4-based approaches on the same evaluation set.
 
 **Future Work:** Expanding TCMConstraintLibrary to cover dosage-dependent conflicts, preparation method interactions, and cross-domain physical constraints (e.g., robot kinematics, drug interactions in Western medicine).
 
